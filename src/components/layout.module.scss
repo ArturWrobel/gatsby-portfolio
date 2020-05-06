@@ -1,0 +1,22 @@
+.container {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.title {
+    position: fixed;
+    color: rgb(0,0,0);
+    font-size: 2rem;
+    text-decoration: none;
+    color: lightgrey;
+    margin-left: 20px;
+}
