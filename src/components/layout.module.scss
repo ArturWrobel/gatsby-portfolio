@@ -1,3 +1,11 @@
+body, html {
+    background: url(../../static/horizon.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .container {
     margin: 0 auto;
     max-width: 750px;
@@ -10,13 +18,32 @@
 
 .content {
     flex-grow: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.title {
+@media screen and (min-width: 701px) {
+    .title {
     position: fixed;
-    color: rgb(0,0,0);
+    color: rgba(0, 0, 0, 0.4);
     font-size: 2rem;
     text-decoration: none;
-    color: lightgrey;
-    margin-left: 20px;
-}
+    right: 20px;
+    transition: 1s;
+}}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 700px) {
+    
+    .title {
+        position: fixed;
+        color: rgba(0, 0, 0, 0.4);
+        font-size: 2rem;
+        text-decoration: none;
+        right: -100px;
+        transform: rotate(-90deg);
+        transition: 1s;
+        top: 120px
+}}

@@ -2,8 +2,10 @@ import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
-import blogStyles from './blog.module.scss'
+import projectStyles from './project.module.scss'
 import Head from '../components/head'
+import Zard from '../templates/cards'
+
 
 const BlogPage = () => {
 
@@ -28,11 +30,11 @@ const BlogPage = () => {
     return (
         <Layout>
             <Head title = "Projects"/>
-            <h1>My projects</h1>
-            <ol className={blogStyles.projects}>
+            <h1 className = {projectStyles.title}>My projects</h1>
+            <ol className={projectStyles.projects}>
                 {data.allMarkdownRemark.edges.map((edge) => {
                     return (
-                        <li className={blogStyles.project}>
+                        <li className={projectStyles.project}>
                             <Link to={`/project/${edge.node.fields.slug}`}>
                                 <h2>{edge.node.frontmatter.title}</h2>
                                 <p>{edge.node.frontmatter.date}</p>
