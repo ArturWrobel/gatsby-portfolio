@@ -1,4 +1,5 @@
 import React from 'react'
+import contactStyles from './contact.module.scss'
 
 import Layout from "../components/layout"
 import Head from '../components/head'

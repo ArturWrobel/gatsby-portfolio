@@ -5,7 +5,7 @@ date: "2020-05-06"
 
 Dashboard build with Flask and Dash
 
-<!-- ![Dashboard](./grass.png) -->
+![Gatsby](./gatsby.jpg)
 
 ## Topics Covered
 

@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
 import headerStyles from "./header.module.scss"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Header = () => {
 
@@ -10,40 +11,40 @@ const Header = () => {
       <nav>
         <ul className={headerStyles.navList}>
           <li>
-            <Link
+            <AniLink cover bg="#fbb6c5" duration={1}
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/"
             >
               Home
-            </Link>
+            </AniLink>
           </li>
           <li>
-            <Link
+            <AniLink cover bg="#fbb6c5" duration={1}
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/projects"
             >
               Projects
-            </Link>
+            </AniLink>
           </li>
           <li>
-            <Link
+            <AniLink cover bg="#fbb6c5" duration={1}
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/about"
             >
               About
-            </Link>
+            </AniLink>
           </li>
           <li>
-            <Link
+            <AniLink cover bg="#fbb6c5" duration={1}
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/contact"
             >
               Contact
-            </Link>
+            </AniLink>
           </li>
         </ul>
       </nav>
