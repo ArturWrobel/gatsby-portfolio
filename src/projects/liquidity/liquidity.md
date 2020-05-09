@@ -10,3 +10,5 @@ date: "2019-09-11"
 ## Techs included
 - Django
 - PostgreSQL
+
+[Github repo](https://github.com/ArturWrobel/liquidity-manager)

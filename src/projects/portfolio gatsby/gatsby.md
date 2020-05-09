@@ -12,3 +12,5 @@ Dashboard build with Flask and Dash
 - Gatsby
 - Markdown
 - React
+
+[Github repo](https://github.com/ArturWrobel/gatsby-portfolio)

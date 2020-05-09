@@ -11,7 +11,7 @@ const Header = () => {
       <nav>
         <ul className={headerStyles.navList}>
           <li>
-            <AniLink cover bg="#fbb6c5" duration={1}
+            <AniLink cover bg="#fbb6c5" duration={.5}
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/"
@@ -20,7 +20,7 @@ const Header = () => {
             </AniLink>
           </li>
           <li>
-            <AniLink cover bg="#fbb6c5" duration={1}
+            <AniLink cover bg="#fbb6c5" duration={.5}
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/projects"
@@ -29,7 +29,7 @@ const Header = () => {
             </AniLink>
           </li>
           <li>
-            <AniLink cover bg="#fbb6c5" duration={1}
+            <AniLink cover bg="#fbb6c5" duration={.5}
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/about"
@@ -38,7 +38,7 @@ const Header = () => {
             </AniLink>
           </li>
           <li>
-            <AniLink cover bg="#fbb6c5" duration={1}
+            <AniLink cover bg="#fbb6c5" duration={.5}
               className={headerStyles.navItem}
               activeClassName={headerStyles.activeNavItem}
               to="/contact"
