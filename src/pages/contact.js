@@ -10,15 +10,15 @@ const ContactPage = () => {
         <Layout>
             <Head title="Contact" />
             <h1>Contact</h1>
-            <div className = {contactStyles.contact}>
-                <div className = {contactStyles.left}>
-                <MailFilled style={{ fontSize: '20px', color: 'brown' }}/> &nbsp;
-                    artur.r.wrobel@gmail.com
+            <div className={contactStyles.contact}>
+                <div className={contactStyles.left}>
+                    <div><MailFilled style={{ fontSize: '20px', color: 'brown' }} />Email</div>
+                    <div>artur.r.wrobel@gmail.com</div>
                 </div>
-                <div className = {contactStyles.right}>
-                <PhoneFilled style={{ fontSize: '20px', color: 'brown' }}/> &nbsp;
-                    +48 513 134 071
-            </div>
+                <div className={contactStyles.right}>
+                    <div><PhoneFilled style={{ fontSize: '20px', color: 'brown' }} />Phone</div>
+                    <div>+48 513 134 071</div>
+                </div>                
             </div>
         </Layout>
     )

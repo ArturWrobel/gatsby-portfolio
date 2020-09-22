@@ -25,9 +25,11 @@ const Layout = (props) => {
                     {data.site.siteMetadata.title}
                 </AniLink>
             </h1>
+
+
             <div className={layoutStyles.container}>
                 <Header />
-                <div className={layoutStyles.content}>                    
+                <div className={layoutStyles.content}>
                     {props.children}
                 </div>
                 <Footer />
